@@ -7,6 +7,10 @@
     <persistence-unit name="perUnitMysql">
         <description>JPA Demo</description>
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>ir.hri.Entity.User</class>
+        <class>ir.hri.Entity.State</class>
+        <class>ir.hri.Entity.City</class>
+
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
             <property name="hibernate.hbm2ddl.auto" value="create"/>
@@ -16,5 +20,6 @@
             <property name="javax.persistence.jdbc.password" value="root"/>
             <property name="hibernate.show_sql" value="true"/>
         </properties>
+
     </persistence-unit>
 </persistence>
